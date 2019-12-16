@@ -1,5 +1,6 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+#define CV_WINDOW_AUTOSIZE cv::WINDOW_AUTOSIZE
 
 using namespace cv;
 int main( int argc, char** argv )

@@ -4,6 +4,12 @@
     make
     ./main args ...
 */
+#define CV_AA cv::LINE_AA
+#define CV_CHAIN_APPROX_NONE cv::CHAIN_APPROX_NONE
+#define CV_CHAIN_APPROX_SIMPLE cv::CHAIN_APPROX_SIMPLE
+#define CV_RETR_LIST cv::RETR_LIST
+#define CV_FILLED cv::FILLED
+
 
 #include <iostream>
 #include <vector>
@@ -73,9 +79,9 @@ int main(int argc, char* argv[])
         return -1;
     }
 
-    cv::string input_img_path = argv[1]; 
+    cv::String input_img_path = argv[1]; 
     double cutRate = 0.1;
-    cv::string save_path = "output/result.tiff";
+    cv::String save_path = "output/result.tiff";
     
 
     if(argc>2){

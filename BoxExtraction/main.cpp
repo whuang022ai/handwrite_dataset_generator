@@ -4,6 +4,11 @@
     make
     ./main args ...
 */
+#define CV_AA cv::LINE_AA
+#define CV_CHAIN_APPROX_NONE cv::CHAIN_APPROX_NONE
+#define CV_CHAIN_APPROX_SIMPLE cv::CHAIN_APPROX_SIMPLE
+#define CV_RETR_LIST cv::RETR_LIST
+#define CV_FILLED cv::FILLED
 
 #include <iostream>
 #include <vector>
